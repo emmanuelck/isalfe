@@ -132,6 +132,9 @@ section{
     background: transparent;
     transition: background .5s ease;
 }
+.navbar.menu-open{
+    background: #fff;
+}
 .scroll-navbar{
     background: #fff;
     box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
@@ -153,6 +156,9 @@ section{
     padding-left: 10px;
     padding-right: 10px;
 }
+.navbar.menu-open .nav-item{
+    border: none;
+}
 .nav-item:last-child{
     border-right: none;
 }
@@ -166,7 +172,10 @@ section{
 .nav-link:hover{
     color: #0dc3e8;
 }
-
+.navbar.menu-open .navbar-nav{
+    margin-top: 20px;
+    border-top: 1px solid #0dc3e8;
+}
 /*HEADER*/
 header{
     padding-top: 50px;
