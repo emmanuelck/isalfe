@@ -1,0 +1,353 @@
+/* 
+font-family: 'Days One', sans-serif;
+font-family: 'Jost', sans-serif; 
+*/
+body{
+    font-family: 'Jost', sans-serif; 
+    font-weight: 300;
+}
+/*BUTTONS*/
+.btn{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+.btn-primary{
+    background: #0dc3e8;
+    border-color: #0dc3e8;
+}
+.btn-primary:hover{
+    background: #029DBD;
+    border-color: #029DBD;
+}
+/*TEXT*/
+section h2{
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: #114592;
+    line-height: .8em;
+    text-align: left;
+    display: inline-block;
+}
+section h2 span{
+    font-size: 20px;
+    display: block;
+    font-family: 'Jost', sans-serif; 
+    font-weight: 200;
+    margin-left: -10px;
+}
+
+p{
+    margin: 0;
+}
+
+/*SECTION BASICS*/
+section{
+    padding: 100px 0;
+}
+
+.waves-opacity {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+    background: #fff;
+}
+
+.waves-opacity svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.waves-opacity .shape-fill {
+    fill: #e6eff6;
+}
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.curve .shape-fill {
+    fill: #FFFFFF;
+}
+.curve-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.curve-bottom .shape-fill {
+    fill: #FFFFFF;
+}
+.curve-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.curve-top .shape-fill {
+    fill: #FFFFFF;
+}
+/*NAV*/
+.navbar{
+    background: transparent;
+    transition: background .5s ease;
+}
+.scroll-navbar{
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+}
+.navbar-brand img{
+    width: 150px;
+    transition: width .5s ease;
+}
+.scroll-navbar .navbar-brand img{
+    width: 100px;
+}
+@media (min-width: 992px){
+    .navbar-brand img{
+        width: 200px;
+    }
+}
+.nav-item{
+    border-right: 1px solid #0dc3e8;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-item:last-child{
+    border-right: none;
+}
+.nav-link{
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #114592;
+}
+.nav-link:hover{
+    color: #0dc3e8;
+}
+
+/*HEADER*/
+header{
+    padding-top: 50px;
+    background: #e6eff6 url(images/header-bg.png);
+    position: relative;
+    z-index: 10;
+    position: relative;
+}
+@media (min-width: 992px){
+    header{
+        padding-top: 100px;
+    }
+}
+header .container{
+    position: relative;
+    bottom: -50px;
+}
+@media (min-width: 1200px){
+    header .container{
+        bottom: -100px;
+    }
+}
+header img{
+    position: relative;
+    z-index: 10;
+}
+header h2{
+    font-family: 'Days One', sans-serif;
+    color: #114592;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+header h2 span{
+    font-size: 16px;
+    display: block;
+}
+header p{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+@media (min-width: 992px){
+    header p{
+        max-width: 500px;
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+}
+
+/*NUESTRA MISION*/
+.nuestra-mision{
+    position: relative;
+    padding: 120px 0 50px
+}
+@media (min-width: 992px){
+    .nuestra-mision{
+        font-size: 1.2rem;
+        padding: 150px 0 50px
+    }
+}
+@media (min-width: 1200px){
+    .nuestra-mision{
+        font-size: 1.5rem;
+        padding: 200px 0 50px
+    }
+}
+/*NUESTROS OBJETIVOS*/
+.nuestros-objetivos{
+background-color: #e6eff6;
+background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e6eff6 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+position: relative;
+}
+.nuestros-objetivos{
+    padding-bottom: 0;
+}
+.nuestros-objetivos .cards-row{
+    bottom: -50px;
+    position: relative;
+}
+
+/*SERVICIOS*/
+section.servicios {
+    background-color: #e6eff6;
+
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e6eff6 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    position: relative;
+  }
+  
+  .servicios .card {
+    border: none;
+    border-radius: 1rem;
+    /* transition: all 0.2s; */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicios hr {
+    margin: 1.5rem 0;
+  }
+  
+  .servicios .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .servicios .card-price {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .servicios .card-price .period {
+    font-size: 0.8rem;
+  }
+  
+  .servicios ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .servicios .text-muted {
+    opacity: 0.7;
+  }
+  
+  .servicios .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    /* transition: all 0.2s; */
+  }
+  
+.contacto{
+    background-color: #e6eff6;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e6eff6 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    position: relative;
+}
+  
+  /* Hover Effects on Card */
+  
+  @media (min-width: 992px) {
+    .servicios .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .servicios .card:hover .btn {
+      opacity: 1;
+    }
+  }
+
+
+/*CARD*/
+.card{
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+    bottom: 0;
+    transition: bottom .2s ease-in-out
+}
+@media (min-width: 992px){
+    .card:hover{
+        bottom: 20px;
+        transition: bottom .2s ease-in-out
+    }
+}
+.card .card-header{
+    background: #fff;
+    padding: 25px 0 10px;
+}
+.card .card-header i{
+    font-size: 26px;
+    color: #0dc3e8;
+}
+.card p{
+    line-height: 20px;
+    text-align: center;
+}
