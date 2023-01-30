@@ -50,13 +50,12 @@ section{
 
 .waves-opacity {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     z-index: 0;
-    background: #fff;
 }
 
 .waves-opacity svg {
@@ -189,15 +188,7 @@ header{
         padding-top: 100px;
     }
 }
-header .container{
-    position: relative;
-    bottom: -50px;
-}
-@media (min-width: 1200px){
-    header .container{
-        bottom: -100px;
-    }
-}
+
 header img{
     position: relative;
     z-index: 10;
@@ -224,21 +215,30 @@ header p{
     }
 }
 
+.imagen-principal{
+    height: 200px;
+    background: url('https://kuzacorp.cl/wp-content/uploads/2022/03/cumbres-de-santa-maria.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+@media (min-width: 992px){
+    .imagen-principal{
+        height: 350px;
+    }
+}
+
 /*NUESTRA MISION*/
 .nuestra-mision{
     position: relative;
-    padding: 120px 0 50px
 }
 @media (min-width: 992px){
     .nuestra-mision{
         font-size: 1.2rem;
-        padding: 150px 0 50px
     }
 }
 @media (min-width: 1200px){
     .nuestra-mision{
         font-size: 1.5rem;
-        padding: 200px 0 50px
     }
 }
 /*NUESTROS OBJETIVOS*/
